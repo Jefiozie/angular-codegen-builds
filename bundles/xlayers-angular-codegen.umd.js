@@ -248,24 +248,24 @@
              */
             function (file) {
                 switch (file.language) {
-                    case "html":
-                        return __assign({}, file, { kind: "angular", uri: options.componentDir + "/" + fileName + ".component.html" });
-                    case "css":
-                        return __assign({}, file, { kind: "angular", uri: options.componentDir + "/" + fileName + ".component.css" });
+                    case 'html':
+                        return __assign({}, file, { kind: 'angular', uri: options.componentDir + "/" + fileName + ".component.html" });
+                    case 'css':
+                        return __assign({}, file, { kind: 'angular', uri: options.componentDir + "/" + fileName + ".component.css" });
                     default:
-                        return __assign({}, file, { kind: "angular" });
+                        return __assign({}, file, { kind: 'angular' });
                 }
             })), [
                 {
-                    kind: "angular",
+                    kind: 'angular',
                     value: this.renderComponent(current.name, options),
-                    language: "typescript",
+                    language: 'typescript',
                     uri: options.componentDir + "/" + fileName + ".component.ts"
                 },
                 {
-                    kind: "angular",
+                    kind: 'angular',
                     value: this.renderSpec(current.name),
-                    language: "typescript",
+                    language: 'typescript',
                     uri: options.componentDir + "/" + fileName + ".spec.ts"
                 }
             ]);
@@ -308,7 +308,7 @@
         };
         AngularAggregatorService.decorators = [
             { type: core.Injectable, args: [{
-                        providedIn: "root"
+                        providedIn: 'root'
                     },] }
         ];
         /** @nocollapse */

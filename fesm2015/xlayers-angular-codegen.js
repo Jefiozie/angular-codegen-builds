@@ -31,24 +31,24 @@ class AngularAggregatorService {
              */
             file => {
                 switch (file.language) {
-                    case "html":
-                        return Object.assign({}, file, { kind: "angular", uri: `${options.componentDir}/${fileName}.component.html` });
-                    case "css":
-                        return Object.assign({}, file, { kind: "angular", uri: `${options.componentDir}/${fileName}.component.css` });
+                    case 'html':
+                        return Object.assign({}, file, { kind: 'angular', uri: `${options.componentDir}/${fileName}.component.html` });
+                    case 'css':
+                        return Object.assign({}, file, { kind: 'angular', uri: `${options.componentDir}/${fileName}.component.css` });
                     default:
-                        return Object.assign({}, file, { kind: "angular" });
+                        return Object.assign({}, file, { kind: 'angular' });
                 }
             })),
             {
-                kind: "angular",
+                kind: 'angular',
                 value: this.renderComponent(current.name, options),
-                language: "typescript",
+                language: 'typescript',
                 uri: `${options.componentDir}/${fileName}.component.ts`
             },
             {
-                kind: "angular",
+                kind: 'angular',
                 value: this.renderSpec(current.name),
-                language: "typescript",
+                language: 'typescript',
                 uri: `${options.componentDir}/${fileName}.spec.ts`
             }
         ];
@@ -114,7 +114,7 @@ describe('${className}Component', () => {
 }
 AngularAggregatorService.decorators = [
     { type: Injectable, args: [{
-                providedIn: "root"
+                providedIn: 'root'
             },] }
 ];
 /** @nocollapse */

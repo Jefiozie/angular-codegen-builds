@@ -1,6 +1,6 @@
 /// <reference types="sketchapp" />
-import { WebCodeGenService } from '@xlayers/web-codegen';
-import { FormatService } from '@xlayers/sketch-lib';
+import { WebCodeGenService } from "@xlayers/web-codegen";
+import { FormatService } from "@xlayers/sketch-lib";
 declare type WebCodeGenOptions = any;
 export declare class AngularAggregatorService {
     private readonly formatService;
